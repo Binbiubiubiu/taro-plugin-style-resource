@@ -1,6 +1,6 @@
 
 
-## [0.1.3](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.1...0.1.3) (2022-04-03)
+## [0.1.4](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.3...0.1.4) (2022-04-03)## [0.1.3](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.1...0.1.3) (2022-04-03)
 
 
 ### Bug Fixes
