@@ -1,6 +1,6 @@
 {
   "name": "taro-plugin-style-resource",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Taro 小程序端构建后支持less/stylus全局变量",
   "keywords": [
     "Taro",
