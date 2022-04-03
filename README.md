@@ -24,13 +24,13 @@ const path = require("path");
  * @typedef { import("taro-plugin-style-resource").PluginOptions } PluginOptions
  * @type {PluginOptions}
  */
-const PluginOptions = {
+const pluginOptions = {
   less: {
     patterns: [path.resolve(__dirname, "..", "src/styles/index.less")],
   },
 };
 const config = {
-  plugins: [["taro-plugin-style-resource", PluginOptions]],
+  plugins: [["taro-plugin-style-resource", pluginOptions]],
 };
 ```
 

@@ -8,11 +8,13 @@ specifiers:
   release-it: ^14.14.0
   rimraf: ^3.0.2
   style-resources-loader: ^1.5.0
+  taro-plugin-style-resource: ^0.1.4
   typescript: ^4.6.3
   webpack-chain: ^6.5.1
 
 dependencies:
   style-resources-loader: 1.5.0
+  taro-plugin-style-resource: 0.1.4
 
 devDependencies:
   '@hapi/joi': 17.1.1
@@ -4366,6 +4368,14 @@ packages:
     resolution: {integrity: sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==}
     engines: {node: '>=6'}
     dev: true
+
+  /taro-plugin-style-resource/0.1.4:
+    resolution: {integrity: sha512-3e16cN5ZjCSSXnKPLomqvRKzTGfsig6H2ujSYkWk/XJHw8CcrFzYWs72WWt/IvcT/cLV23YWPa1tKiSvIHe77w==}
+    dependencies:
+      style-resources-loader: 1.5.0
+    transitivePeerDependencies:
+      - webpack
+    dev: false
 
   /temp-dir/1.0.0:
     resolution: {integrity: sha512-xZFXEGbG7SNC3itwBzI3RYjq/cEhBkx2hJuKGIUOcEULmkQExXiHat2z/qkISYsuR+IKumhEfKKbV5qXmhICFQ==}

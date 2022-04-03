@@ -5,7 +5,7 @@ import type Joi from "@hapi/joi";
 
 type StyleProcessType = "less" | "stylus"
 
-type PluginOptions = {
+export type PluginOptions = {
   [key in StyleProcessType]?: StyleResourcesLoaderNormalizedOptions;
 };
 
