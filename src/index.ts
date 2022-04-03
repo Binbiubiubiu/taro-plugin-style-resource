@@ -25,17 +25,16 @@ export default (ctx: IPluginContext, pluginOpts: PluginOptions) => {
         injector: [joi.any().valid("prepend", "append"), joi.func()],
         globOptions: joi.object(),
         resolveUrl: joi.bool(),
-      })
-      .required();
+      });
 
     return joi.object().keys({
       less:styleLoaderSchema,
       stylus:styleLoaderSchema,
-    }).required();
+    }).required().or('less', 'stylus');
   });
 
   ctx.modifyWebpackChain((c) => {
-    const chain = c as unknown as Config;
+    const chain = c.chain as unknown as Config;
     Object.keys(pluginOpts).map((type) => {
       chain.module
         .rule(type)
