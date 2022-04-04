@@ -1,6 +1,6 @@
 
 
-## [0.1.6](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.5...0.1.6) (2022-04-04)## [0.1.5](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.4...0.1.5) (2022-04-03)## [0.1.4](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.3...0.1.4) (2022-04-03)## [0.1.3](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.1...0.1.3) (2022-04-03)
+## [0.1.7](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.6...0.1.7) (2022-04-04)## [0.1.6](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.5...0.1.6) (2022-04-04)## [0.1.5](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.4...0.1.5) (2022-04-03)## [0.1.4](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.3...0.1.4) (2022-04-03)## [0.1.3](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.1...0.1.3) (2022-04-03)
 
 
 ### Bug Fixes
