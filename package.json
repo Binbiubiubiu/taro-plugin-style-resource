@@ -1,7 +1,7 @@
 {
   "name": "taro-plugin-style-resource",
   "version": "0.1.6",
-  "description": "Taro 小程序端构建后支持less/stylus全局变量",
+  "description": "Taro 构建编译插件,给less或stylus添加公共样式资源",
   "keywords": [
     "Taro",
     "style",
