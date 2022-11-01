@@ -3,7 +3,9 @@ import type Config from "webpack-chain";
 import type { StyleResourcesLoaderNormalizedOptions } from "style-resources-loader";
 import type Joi from "@hapi/joi";
 
-type StyleProcessType = "less" | "stylus"
+const SUPPORTED_TYPE = ["less","styl"] as const;
+
+type StyleProcessType = typeof SUPPORTED_TYPE[number]
 
 export type PluginOptions = {
   [key in StyleProcessType]?: StyleResourcesLoaderNormalizedOptions;
@@ -26,11 +28,13 @@ export default (ctx: IPluginContext, pluginOpts: PluginOptions) => {
         globOptions: joi.object(),
         resolveUrl: joi.bool(),
       });
+    
+    const optionsSchema = SUPPORTED_TYPE.reduce((ops,key)=>{
+      ops[key] = styleLoaderSchema;
+      return ops;
+    },{});
 
-    return joi.object().keys({
-      less:styleLoaderSchema,
-      stylus:styleLoaderSchema,
-    }).required().or('less', 'stylus');
+    return joi.object().keys(optionsSchema).required().or(...SUPPORTED_TYPE);
   });
 
   ctx.modifyWebpackChain((c) => {

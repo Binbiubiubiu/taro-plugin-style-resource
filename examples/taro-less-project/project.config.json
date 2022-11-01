@@ -1,11 +1,13 @@
 {
   "miniprogramRoot": "./dist",
   "projectname": "taro-less-project",
-  "description": "",
+  "description": "The example for use less in the Taro",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,
     "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
     "postcss": false,
     "minified": false
   },
