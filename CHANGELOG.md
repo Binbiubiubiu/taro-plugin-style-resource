@@ -1,5 +1,12 @@
 
 
+## [0.1.9](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.8...0.1.9) (2022-11-03)
+
+
+### Bug Fixes
+
+* 修复不同环境配置无效 ([3afcc3d](https://github.com/Binbiubiubiu/taro-plugin-style-resource/commit/3afcc3df0a30bd12ab261230cece2a85aac6ae42))
+
 ## [0.1.8](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.7...0.1.8) (2022-11-01)
 
 
