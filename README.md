@@ -38,8 +38,26 @@ const config = {
 
 ### 插件配置
 
-| 参数   | 类型   | 说明                           |
-| :----- | :----- | :----------------------------- |
+| 参数   | 类型   | 说明                                                                                              |
+| :----- | :----- | :------------------------------------------------------------------------------------------------ |
 | less   | Object | [style-resources-loader](https://developers.weixin.qq.com/miniprogram/dev/devtools/ci.html)的配置 |
-| styl | Object | [style-resources-loader](https://developers.weixin.qq.com/miniprogram/dev/devtools/ci.html)的配置 |
+| stylus | Object | [style-resources-loader](https://developers.weixin.qq.com/miniprogram/dev/devtools/ci.html)的配置 |
 
+### 支持平台
+
+| 平台名称          | 是否支持 |
+| :---------------- | :------- |
+| H5                | ✅       |
+| 微信小程序        | ✅       |
+| 京东小程序        | ✅       |
+| 百度小程序        | ✅       |
+| 支付宝小程序      | ✅       |
+| 字节跳动小程序    | ✅       |
+| QQ 小程序         | ✅       |
+| 钉钉小程序        | ✅       |
+| 企业微信小程序    | ✅       |
+| 支付宝 IOT 小程序 | ✅       |
+| 飞书小程序        | ✅       |
+| 快手小程序        | ✅       |
+| 小红书小程序      | ✅       |
+| ReactNative       | ❌       |

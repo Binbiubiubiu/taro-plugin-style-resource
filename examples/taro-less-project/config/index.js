@@ -22,7 +22,15 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: [["taro-plugin-style-resource", pluginOptions]],
+  plugins: [
+    ["taro-plugin-style-resource", pluginOptions],
+    "@tarojs/plugin-platform-weapp-qy",
+    "@tarojs/plugin-platform-alipay-dd",
+    "@tarojs/plugin-platform-alipay-iot",
+    "@tarojs/plugin-platform-lark",
+    "@tarojs/plugin-platform-kwai",
+    "@tarojs/plugin-platform-xhs",
+  ],
   defineConstants: {
   },
   copy: {

@@ -21,7 +21,7 @@
     "clean": "rimraf dist",
     "release": "npm run clean && npm run build && release-it",
     "release:try": "npm run release -- --dry-run",
-    "test:e2e": "pnpm --filter=./examples/* --workspace-concurrency=1 test:e2e"
+    "example": "pnpm --filter=./examples/* --workspace-concurrency=1 "
   },
   "author": "Binbiubiubiu <2632003786@qq.com>",
   "license": "MIT",

@@ -3,7 +3,7 @@ import type Config from "webpack-chain";
 import type { StyleResourcesLoaderNormalizedOptions } from "style-resources-loader";
 import type Joi from "@hapi/joi";
 
-const SUPPORTED_TYPE = ["less","styl"] as const;
+const SUPPORTED_TYPE = ["less","stylus"] as const;
 
 type StyleProcessType = typeof SUPPORTED_TYPE[number]
 
@@ -39,13 +39,22 @@ export default (ctx: IPluginContext, pluginOpts: PluginOptions) => {
 
   ctx.modifyWebpackChain((c) => {
     const chain = c.chain as unknown as Config;
+    if(pluginOpts.stylus){
+      (pluginOpts as any)['styl'] = pluginOpts.stylus;
+    }
     Object.keys(pluginOpts).map((type) => {
-      chain.module
-        .rule(type)
-        .oneOf("0")
-        .use("style-resource")
-        .loader("style-resources-loader")
-        .options(pluginOpts[type]);
+      let cur:any = chain.module.rule(type);
+      if(cur.oneOfs.values().length!==0){
+        cur = cur.oneOf('0');
+      }else if(cur.uses.values().length==0){
+        cur = null;
+      }
+      if(cur){
+        cur.use("style-resource")
+          .loader("style-resources-loader")
+          .options(pluginOpts[type]);
+      }
+      
     });
   });
 };
