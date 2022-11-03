@@ -7,7 +7,6 @@ importers:
       '@hapi/joi': ^17.1.1
       '@release-it/conventional-changelog': ^4.3.0
       '@tarojs/service': ^3.5.7
-      '@types/hapi__joi': ^17.1.8
       release-it: ^14.14.3
       rimraf: ^3.0.2
       style-resources-loader: ^1.5.0
@@ -19,7 +18,6 @@ importers:
       '@hapi/joi': 17.1.1
       '@release-it/conventional-changelog': 4.3.0_release-it@14.14.3
       '@tarojs/service': 3.5.7
-      '@types/hapi__joi': 17.1.8
       release-it: 14.14.3
       rimraf: 3.0.2
       typescript: 4.8.4
@@ -467,6 +465,17 @@ packages:
       '@babel/core': 7.17.8
       '@babel/helper-annotate-as-pure': 7.18.6
       regexpu-core: 5.0.1
+    dev: true
+
+  /@babel/helper-create-regexp-features-plugin/7.19.0_@babel+core@7.17.8:
+    resolution: {integrity: sha512-htnV+mHX32DF81amCDrwIDr8nrp1PTm+3wfBN9/v8QJOLEioOCOG7qNyq0nHeFiWbT3Eb7gsPwEmV64UCQ1jzw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+    dependencies:
+      '@babel/core': 7.17.8
+      '@babel/helper-annotate-as-pure': 7.18.6
+      regexpu-core: 5.2.1
     dev: true
 
   /@babel/helper-create-regexp-features-plugin/7.19.0_@babel+core@7.19.6:
@@ -1287,6 +1296,17 @@ packages:
       '@babel/helper-plugin-utils': 7.19.0
     dev: true
 
+  /@babel/plugin-proposal-unicode-property-regex/7.18.6_@babel+core@7.17.8:
+    resolution: {integrity: sha512-2BShG/d5yoZyXZfVePH91urL5wTG6ASZU9M4o03lKK8u8UW1y08OMttBSOADTcJrnPMpvDXRG3G8fyLh4ovs8w==}
+    engines: {node: '>=4'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+      '@babel/helper-create-regexp-features-plugin': 7.19.0_@babel+core@7.17.8
+      '@babel/helper-plugin-utils': 7.19.0
+    dev: true
+
   /@babel/plugin-proposal-unicode-property-regex/7.18.6_@babel+core@7.19.6:
     resolution: {integrity: sha512-2BShG/d5yoZyXZfVePH91urL5wTG6ASZU9M4o03lKK8u8UW1y08OMttBSOADTcJrnPMpvDXRG3G8fyLh4ovs8w==}
     engines: {node: '>=4'}
@@ -1786,6 +1806,17 @@ packages:
     dependencies:
       '@babel/core': 7.17.8
       '@babel/helper-create-regexp-features-plugin': 7.17.0_@babel+core@7.17.8
+      '@babel/helper-plugin-utils': 7.19.0
+    dev: true
+
+  /@babel/plugin-transform-dotall-regex/7.18.6_@babel+core@7.17.8:
+    resolution: {integrity: sha512-6S3jpun1eEbAxq7TdjLotAsl4WpQI9DxfkycRcKrjhQYzU87qpXdknpBg/e+TdcMehqGnLFi7tnFUBR02Vq6wg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.17.8
+      '@babel/helper-create-regexp-features-plugin': 7.19.0_@babel+core@7.17.8
       '@babel/helper-plugin-utils': 7.19.0
     dev: true
 
@@ -2619,8 +2650,8 @@ packages:
     dependencies:
       '@babel/core': 7.17.8
       '@babel/helper-plugin-utils': 7.19.0
-      '@babel/plugin-proposal-unicode-property-regex': 7.16.7_@babel+core@7.17.8
-      '@babel/plugin-transform-dotall-regex': 7.16.7_@babel+core@7.17.8
+      '@babel/plugin-proposal-unicode-property-regex': 7.18.6_@babel+core@7.17.8
+      '@babel/plugin-transform-dotall-regex': 7.18.6_@babel+core@7.17.8
       '@babel/types': 7.20.0
       esutils: 2.0.3
     dev: true
@@ -4330,7 +4361,7 @@ packages:
       fs-extra: 8.1.0
       joi: 17.7.0
       lodash: 4.17.21
-      resolve: 1.22.0
+      resolve: 1.22.1
       tapable: 1.1.3
       webpack-merge: 4.2.2
     transitivePeerDependencies:
@@ -4695,10 +4726,6 @@ packages:
     dependencies:
       '@types/minimatch': 5.1.2
       '@types/node': 18.11.9
-    dev: true
-
-  /@types/hapi__joi/17.1.8:
-    resolution: {integrity: sha512-omVytnOAiAfzGUOQArujJr3heWxPrDHW7MF1ieqix1ngoGdhtJmSSDFVM+ZAOa7UmhlGJtltdgUAT03mfDu6kg==}
     dev: true
 
   /@types/html-minifier-terser/6.1.0:
@@ -7332,7 +7359,7 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       dot-prop: 4.2.1
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       make-dir: 1.3.0
       unique-string: 1.0.0
       write-file-atomic: 2.4.3
@@ -8318,7 +8345,7 @@ packages:
       decompress-tarbz2: 4.1.1
       decompress-targz: 4.1.1
       decompress-unzip: 4.0.1
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       make-dir: 1.3.0
       pify: 2.3.0
       strip-dirs: 2.1.0
@@ -8427,7 +8454,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       globby: 11.1.0
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       is-glob: 4.0.3
       is-path-cwd: 2.2.0
       is-path-inside: 3.0.3
@@ -10234,7 +10261,7 @@ packages:
   /fs-write-stream-atomic/1.0.10:
     resolution: {integrity: sha512-gehEzmPn2nAwr39eay+x3X34Ra+M2QlVUTLhkXPjWdeO8RF9kszk116avgBJM3ZyNHgHXBNx+VmPaFC36k0PzA==}
     dependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       iferr: 0.1.5
       imurmurhash: 0.1.4
       readable-stream: 2.3.7
@@ -10693,7 +10720,7 @@ packages:
   /globs/0.1.4:
     resolution: {integrity: sha512-D23dWbOq48vlOraoSigbcQV4tWrnhwk+E/Um2cMuDS3/5dwGmdFeA7L/vAvDhLFlQOTDqHcXh35m/71g2A2WzQ==}
     dependencies:
-      glob: 7.2.0
+      glob: 7.2.3
     dev: true
 
   /got/6.7.1:
@@ -12195,7 +12222,7 @@ packages:
     dependencies:
       universalify: 2.0.0
     optionalDependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
     dev: true
 
   /jsonp-retry/1.0.3:
@@ -12344,7 +12371,7 @@ packages:
       tslib: 1.14.1
     optionalDependencies:
       errno: 0.1.8
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       image-size: 0.5.5
       make-dir: 2.1.0
       mime: 1.6.0
@@ -12362,7 +12389,7 @@ packages:
       tslib: 2.3.1
     optionalDependencies:
       errno: 0.1.8
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       image-size: 0.5.5
       make-dir: 2.1.0
       mime: 1.6.0
@@ -12552,7 +12579,7 @@ packages:
     resolution: {integrity: sha512-cy7ZdNRXdablkXYNI049pthVeXFurRyb9+hA/dZzerZ0pGTx42z+y+ssxBaVV2l70t1muq5IdKhn4UtcoGUY9A==}
     engines: {node: '>=0.10.0'}
     dependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       parse-json: 2.2.0
       pify: 2.3.0
       pinkie-promise: 2.0.1
@@ -12573,7 +12600,7 @@ packages:
     resolution: {integrity: sha512-G910TofXH7u0NfslAzqv6c9pHpvBzObNOo2hMG0/KUDpdHeFY0wE/fTBMExt0Gb12gg5bXS7Hj6pb0e+xbBXLA==}
     engines: {node: '>=4'}
     dependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       js-yaml: 3.14.1
       pify: 2.3.0
       strip-bom: 3.0.0
@@ -13244,7 +13271,7 @@ packages:
   /miniprogram-compiler/0.2.1:
     resolution: {integrity: sha512-AHQgJFTnVPMcVBUUdKHlCRC3guK212XkWME0awMQiUgpzp/eIbb3jgFdkl3ib9nDbbEK+m2fSBs0++vwetWJ9Q==}
     dependencies:
-      glob: 7.2.0
+      glob: 7.2.3
       unescape-js: 1.1.4
     dev: true
 
@@ -14372,7 +14399,7 @@ packages:
     resolution: {integrity: sha512-S4eENJz1pkiQn9Znv33Q+deTOKmbl+jj1Fl+qiP/vYezj+S8x+J3Uo0ISrx/QoEvIlOaDWJhPaRd1flJ9HXZqg==}
     engines: {node: '>=0.10.0'}
     dependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       pify: 2.3.0
       pinkie-promise: 2.0.1
     dev: true
@@ -15498,7 +15525,7 @@ packages:
     resolution: {integrity: sha512-1JU/8q+VgFZyxwrJ+SVIOsh+KywWGpds3NTqikiKpDMZWScmAYyKIgqkO+ARvNWJfXeXR1zxz7aHF4u4CyH6vQ==}
     engines: {node: '>=0.10'}
     dependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       micromatch: 3.1.10
       readable-stream: 2.3.7
     transitivePeerDependencies:
@@ -15886,6 +15913,7 @@ packages:
       is-core-module: 2.11.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
+    dev: true
 
   /resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==}
@@ -15956,7 +15984,7 @@ packages:
     resolution: {integrity: sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==}
     hasBin: true
     dependencies:
-      glob: 7.2.0
+      glob: 7.2.3
     dev: true
 
   /rimraf/2.7.1:
@@ -18598,7 +18626,7 @@ packages:
   /write-file-atomic/2.4.3:
     resolution: {integrity: sha512-GaETH5wwsX+GcnzhPgKcKjJ6M2Cq3/iZp1WyY/X1CSqrW+jVNM9Y7D8EC2sM4ZG/V8wZlSniJnCKWPmBYAucRQ==}
     dependencies:
-      graceful-fs: 4.2.9
+      graceful-fs: 4.2.10
       imurmurhash: 0.1.4
       signal-exit: 3.0.7
     dev: true
