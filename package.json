@@ -30,12 +30,12 @@
   },
   "devDependencies": {
     "@hapi/joi": "^17.1.1",
-    "@release-it/conventional-changelog": "^4.2.2",
-    "@tarojs/service": "^3.4.4",
+    "@release-it/conventional-changelog": "^4.3.0",
+    "@tarojs/service": "^3.5.7",
     "@types/hapi__joi": "^17.1.8",
-    "release-it": "^14.14.0",
+    "release-it": "^14.14.3",
     "rimraf": "^3.0.2",
-    "typescript": "^4.6.3",
+    "typescript": "^4.8.4",
     "webpack-chain": "^6.5.1"
   },
   "repository": "git+https://github.com/Binbiubiubiu/taro-plugin-style-resource.git",
