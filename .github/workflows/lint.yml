@@ -9,6 +9,9 @@ on:
       - main
     types: [closed]
 
+permissions:
+  contents: read # to fetch code (actions/checkout)
+
 env:
   CI: true
 jobs:
