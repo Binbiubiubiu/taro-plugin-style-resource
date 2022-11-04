@@ -13,9 +13,9 @@ env:
   CI: true
 jobs:
   lint:
-
-    name: Publish
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
     steps:
       # Setup
       - name: Checkout
@@ -44,5 +44,7 @@ jobs:
         run: pnpm run build
       - name: lint
         run: pnpm run example test
+        env:
+          CI: true
         
       
