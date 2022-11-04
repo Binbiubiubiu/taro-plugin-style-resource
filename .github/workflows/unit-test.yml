@@ -1,4 +1,4 @@
-name: lint
+name: unit-test
 on:
   # When Release Pull Request is merged
   push:
@@ -55,7 +55,7 @@ jobs:
 
       - name: build
         run: pnpm run build
-      - name: lint
+      - name: test
         run: pnpm run example test
         env:
           CI: true
