@@ -17,14 +17,13 @@ env:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
     steps:
       # Setup
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Node ${{ matrix.node_version }}
-        uses: actions/setup-node@v1
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 16
 
@@ -52,7 +51,7 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-        
+
       - name: build
         run: pnpm run build
       - name: lint
