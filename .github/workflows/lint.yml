@@ -26,6 +26,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
+          registry-url: 'https://registry.npmmirror.com'
 
       # Bootstrap project
       - uses: pnpm/action-setup@v2
@@ -50,7 +51,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install -r --frozen-lockfile
 
       - name: build
         run: pnpm run build
