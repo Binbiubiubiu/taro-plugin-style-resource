@@ -40,8 +40,8 @@ const config = {
 
 | 参数   | 类型   | 说明                                                                                              |
 | :----- | :----- | :------------------------------------------------------------------------------------------------ |
-| less   | Object | [style-resources-loader](https://developers.weixin.qq.com/miniprogram/dev/devtools/ci.html)的配置 |
-| stylus | Object | [style-resources-loader](https://developers.weixin.qq.com/miniprogram/dev/devtools/ci.html)的配置 |
+| less   | Object | [style-resources-loader](https://www.npmjs.com/package/style-resources-loader)的配置 |
+| stylus | Object | [style-resources-loader](https://www.npmjs.com/package/style-resources-loader)的配置 |
 
 ### 支持平台
 
