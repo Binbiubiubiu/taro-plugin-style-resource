@@ -18,10 +18,9 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "resolveJsonModule": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ]
+    "esModuleInterop": true,
+    "typeRoots": ["node_modules/@types"]
   },
-  "include": ["src copy", "./types"],
+  "include": ["./src", "./types", "./tests"],
   "compileOnSave": false
 }

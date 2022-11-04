@@ -14,6 +14,7 @@
     "build:alipay": "taro build --type alipay",
     "build:tt": "taro build --type tt",
     "build:h5": "taro build --type h5",
+    "build:jd": "taro build --type jd",
     "build:rn": "taro build --type rn",
     "build:qq": "taro build --type qq",
     "build:qywx": "taro build --type qywx",
@@ -38,6 +39,7 @@
     "dev:xhs": "npm run build:xhs -- --watch",
     "e2e:h5": "zx ./scripts/h5.e2e.mjs",
     "e2e:weapp": "zx ./scripts/weapp.e2e.mjs",
+    "test": "mocha",
     "cy:open": "cypress open",
     "cy:run": "cypress run --e2e --headless"
   },
@@ -82,6 +84,7 @@
     "@tarojs/plugin-platform-xhs": "^1.0.0",
     "@tarojs/webpack5-runner": "3.5.7",
     "@types/mocha": "^10.0.0",
+    "@types/node": "^18.11.9",
     "@types/react": "^18.0.0",
     "@types/webpack-env": "^1.13.6",
     "@typescript-eslint/eslint-plugin": "^5.20.0",

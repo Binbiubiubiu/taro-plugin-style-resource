@@ -53,6 +53,7 @@ importers:
       '@tarojs/taro-h5': 3.5.7
       '@tarojs/webpack5-runner': 3.5.7
       '@types/mocha': ^10.0.0
+      '@types/node': ^18.11.9
       '@types/react': ^18.0.0
       '@types/webpack-env': ^1.13.6
       '@typescript-eslint/eslint-plugin': ^5.20.0
@@ -112,6 +113,7 @@ importers:
       '@tarojs/plugin-platform-xhs': 1.0.0_uel2erjxpjisgc3slznfem4qca
       '@tarojs/webpack5-runner': 3.5.7_y4tasrymvtdtxegexucoxodvcu
       '@types/mocha': 10.0.0
+      '@types/node': 18.11.9
       '@types/react': 18.0.24
       '@types/webpack-env': 1.18.0
       '@typescript-eslint/eslint-plugin': 5.42.0_s2u5welwzsb3bnu3rfhlif75gy
@@ -129,7 +131,7 @@ importers:
       react: 18.2.0
       react-refresh: 0.11.0
       stylelint: 14.14.0
-      ts-node: 10.9.1_typescript@4.6.3
+      ts-node: 10.9.1_avzsx6adyi6q3tw6ixirywrzpe
       typescript: 4.6.3
       webpack: 5.69.0
       zx: 7.1.1
@@ -164,6 +166,7 @@ importers:
       '@tarojs/taro-h5': 3.5.7
       '@tarojs/webpack5-runner': 3.5.7
       '@types/mocha': ^10.0.0
+      '@types/node': ^18.11.9
       '@types/react': ^18.0.0
       '@types/webpack-env': ^1.13.6
       '@typescript-eslint/eslint-plugin': ^5.20.0
@@ -223,6 +226,7 @@ importers:
       '@tarojs/plugin-platform-xhs': 1.0.0_uel2erjxpjisgc3slznfem4qca
       '@tarojs/webpack5-runner': 3.5.7_y4tasrymvtdtxegexucoxodvcu
       '@types/mocha': 10.0.0
+      '@types/node': 18.11.9
       '@types/react': 18.0.24
       '@types/webpack-env': 1.18.0
       '@typescript-eslint/eslint-plugin': 5.42.0_s2u5welwzsb3bnu3rfhlif75gy
@@ -240,7 +244,7 @@ importers:
       react: 18.2.0
       react-refresh: 0.11.0
       stylelint: 14.14.0
-      ts-node: 10.9.1_typescript@4.6.3
+      ts-node: 10.9.1_avzsx6adyi6q3tw6ixirywrzpe
       typescript: 4.6.3
       webpack: 5.69.0
       zx: 7.1.1
@@ -15991,7 +15995,7 @@ packages:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
     hasBin: true
     dependencies:
-      glob: 7.2.0
+      glob: 7.2.3
     dev: true
 
   /rimraf/3.0.2:
@@ -17596,7 +17600,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-node/10.9.1_typescript@4.6.3:
+  /ts-node/10.9.1_avzsx6adyi6q3tw6ixirywrzpe:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -17615,6 +17619,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
+      '@types/node': 18.11.9
       acorn: 8.8.1
       acorn-walk: 8.2.0
       arg: 4.1.3
