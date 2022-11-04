@@ -37,7 +37,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-
       - name: install
-        run: pnpm install
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
       - name: build
         run: pnpm run build
       - name: lint
