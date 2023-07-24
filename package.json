@@ -1,6 +1,6 @@
 {
   "name": "taro-plugin-style-resource",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Taro 构建编译插件,给less或stylus添加公共样式资源",
   "keywords": [
     "Taro",

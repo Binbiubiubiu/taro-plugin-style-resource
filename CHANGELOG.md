@@ -1,5 +1,12 @@
 
 
+## [0.1.10](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.9...0.1.10) (2023-07-24)
+
+
+### Bug Fixes
+
+* fix css module bug ([2975b97](https://github.com/Binbiubiubiu/taro-plugin-style-resource/commit/2975b978fbf6cd71bbd5b538ce531f24306d2c62))
+
 ## [0.1.9](https://github.com/Binbiubiubiu/taro-plugin-style-resource/compare/0.1.8...0.1.9) (2022-11-03)
 
 
