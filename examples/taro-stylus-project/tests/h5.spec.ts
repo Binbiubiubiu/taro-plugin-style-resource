@@ -8,7 +8,7 @@ describe("h5 spec", function () {
   });
 
   it("hould the color of a text is right", async () => {
-    const styles = await readDistFile("/css/5991.css");
+    const styles = await readDistFile("/css/4286.css");
     expect(styles).to.equal(".text__primary{color:#f0f}");
   });
 });
